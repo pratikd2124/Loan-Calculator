@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h2>Loan Calculator</h2>
+            <div class="section">
+                <label for="Amount">Loan Amount</label>
+            <input type="number" name="" id="amount" min="1" placeholder="Enter Loan Amount">
+            </div>
+            
+            <div class="section">
+                <label for="Amount">Interest Rate <small>(%)</small></label>
+            <input type="number" name="" id="rate" min="0" max="100" value="10" step="0.1" placeholder="Enter Rate of Interest">
+            </div>
+            
+            <div class="section">
+                <label for="Amount">Months to Pay</label>
+            <input type="number" name="" id="duration" min="1" max="300" value="1" step="0.1" placeholder="Enter Time duration to pay loan">
+            </div>
+            
+            <div class="section">
+                <label for="Amount">Monthly payment</label>
+            <input type="number" name="" id="ans" placeholder="Your Installment" >
+            </div>
+            <div class="generate">
+                <button type="button" id="calculate" onclick="computeLoan()">Calculate</button>
+                <input type="reset" id="reset" value="Reset">
+            </div>
+            
+        </form>
+    </main>
+  <script src="main.js"></script>
+</body>
+</html>
